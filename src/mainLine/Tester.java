@@ -2,6 +2,7 @@ package mainLine;
 
 
 import HuffmanCoding.HuffmanCodeApp;
+import It_School_Samsung_Tasks.Sequence;
 import ProjectEulerTasks.mult_3_5.Problem1Task;
 import ProjectEulerTasks.mult_3_5.Problem2Task;
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
@@ -20,9 +21,9 @@ public class Tester {
 
 
         // Комбинаторика в словах
-       // Combinator comb = new Combinator("abc");
-       // comb.startCombine();
-       // comb.printSequence();
+        // Combinator comb = new Combinator("abcd");
+        //comb.startCombine();
+        //comb.printSequence();
 
 
         // Считаем максимальтное произведение в массиве из 3-х чисел
@@ -30,7 +31,7 @@ public class Tester {
 
 
         // Алгоритм хаффмена для сжатия данных
-        // HuffmanCodeApp.start();
+        HuffmanCodeApp.start();
 
 
         // Обратная польская запись
@@ -46,7 +47,8 @@ public class Tester {
         String result = "" + calc.doParse();
         System.out.println(result);*/
 
-
+        // Последовательности
+        //Sequence.init();
     }
 
 }
