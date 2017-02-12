@@ -30,7 +30,7 @@ public class Sequence {
     }
 
 
-    public static int calculate(int[] a, int N) {
+    private static int calculate(int[] a, int N) {
         boolean flag = false;
         for (int i = 1; i <= N; i++) {
             for (int j = 0; j < a.length; j++) {
