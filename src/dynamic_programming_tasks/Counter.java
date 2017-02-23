@@ -31,7 +31,7 @@ public class Counter {
         System.out.println(sum);
     }
 
-    public static void find(int n) {
+    private static void find(int n) {
         if (n > R) return;
         if (n == R) list.add(1);
 
