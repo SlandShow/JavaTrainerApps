@@ -6,6 +6,7 @@ import It_School_Samsung_Tasks.Sequence;
 import ProjectEulerTasks.mult_3_5.Problem1Task;
 import ProjectEulerTasks.mult_3_5.Problem2Task;
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
+import dynamic_programming_tasks.Counter;
 import reversePolishNotation.Calculate;
 import reversePolishNotation.ReversePolishNotationApp;
 import task.TaskApp;
@@ -31,7 +32,7 @@ public class Tester {
 
 
         // Алгоритм хаффмена для сжатия данных
-        HuffmanCodeApp.start();
+        //HuffmanCodeApp.start();
 
 
         // Обратная польская запись
@@ -49,6 +50,10 @@ public class Tester {
 
         // Последовательности
         //Sequence.init();
+
+        // Динамическое программирование
+        //Counter.start(1, 29, 1, 4);
+
     }
 
 }
