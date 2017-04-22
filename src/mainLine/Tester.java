@@ -9,6 +9,7 @@ import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 import dynamic_programming_tasks.Counter;
 import reversePolishNotation.Calculate;
 import reversePolishNotation.ReversePolishNotationApp;
+import simple_task.Consistency;
 import task.TaskApp;
 import words_combinatorics.Combinator;
 
@@ -53,6 +54,9 @@ public class Tester {
 
         // Динамическое программирование
         //Counter.start(1, 29, 1, 4);
+
+        // Подсчёт максимального количества подряд идущих элементов
+        Consistency.calculate();
 
     }
 
