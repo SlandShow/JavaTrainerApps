@@ -38,16 +38,11 @@ public class Tester {
 
         // Обратная польская запись
         // Считает выражения с разным кол-вом операторов и операнд
-        /*ReversePolishNotationApp o = new ReversePolishNotationApp();
-        Calculate calc;
-        String testString = "((3+4)*3)*2";
+        /*PostfixConverter converter = new PostfixConverter(new Scanner(System.in).nextLine());
+          System.out.println("Postfix notation of current regular: " + converter.getPostfix());
 
-        o.transform(testString);
-        o.show();
-        String oneOfresult = o.getNewNotation();
-        calc = new Calculate(oneOfresult);
-        String result = "" + calc.doParse();
-        System.out.println(result);*/
+          PostfixCalculator calculator = new PostfixCalculator(converter.getPostfix());
+          System.out.println("Result is " + calculator.getResult());*/
 
         // Последовательности
         //Sequence.init();
