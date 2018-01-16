@@ -2,6 +2,7 @@ package DeutscheTelekomTasks.second;
 
 import java.io.File;
 
+//
 /**
  * Interface for Duplicate task.
  */
