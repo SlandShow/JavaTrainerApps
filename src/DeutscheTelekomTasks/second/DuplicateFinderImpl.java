@@ -16,6 +16,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
         try {
             if (!file.exists())
                 file.createNewFile();
+            else return false;
         } catch (IOException e) {
             return false;
         }
@@ -53,7 +54,6 @@ public class DuplicateFinderImpl implements DuplicateFinder {
             writer = new BufferedWriter(new FileWriter(output));
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
                 writer.write(entry.getKey().toString() + "[" + entry.getValue().toString() + "]\n");
-                System.out.println(entry.getKey() + "[" + entry.getValue() + "]");
             }
         } catch (IOException e) {
             return false;
