@@ -118,6 +118,9 @@ class CalculaterImpl implements Calculator {
     }
 
     private String convertInfix(String old) {
+        if (String.valueOf(old.charAt(0)).equals("+")) 
+            old = old.substring(1, old.length());
+            
         if (!String.valueOf(old.charAt(0)).equals(" ") && !String.valueOf(old.charAt(0)).equals("-")) {
             old = " " + old;
         }
