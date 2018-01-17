@@ -23,7 +23,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
 
     private boolean read(File input) {
         BufferedReader reader = null;
-
+        
         try {
             String currentElement;
             reader = new BufferedReader(new FileReader(input));
@@ -48,6 +48,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
 
     private boolean write(File output) {
         BufferedWriter writer = null;
+        
         try {
             writer = new BufferedWriter(new FileWriter(output));
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
@@ -79,7 +80,6 @@ public class DuplicateFinderImpl implements DuplicateFinder {
             // Write data to second file
             if (!write(targetFile))
                 return false;
-
         } else
             return false;
 
