@@ -13,3 +13,7 @@ Interesting tasks, that I managed to find.
 8. Sequence task (2).
 9. `The product of three numbers` task.
 10. Combinatorics task. 
+
+#### Bonus: 
+`Java`/`Android` Methodology.
+
