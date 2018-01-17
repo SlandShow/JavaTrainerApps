@@ -4,19 +4,17 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-//
-/**
- * Created by Admin on 07.01.2018.
+/*
+ * Created by SlandShow on 07.01.2018.
  */
 public class DuplicateFinderImpl implements DuplicateFinder {
 
-    private final Map<String, Integer> map = new HashMap<>();
+    private Map<String, Integer> map = new HashMap<>();
 
     private boolean createInputFile(File file) {
         try {
             if (!file.exists())
                 file.createNewFile();
-            else return false;
         } catch (IOException e) {
             return false;
         }
@@ -73,6 +71,10 @@ public class DuplicateFinderImpl implements DuplicateFinder {
             // Read data from first file
             if (!read(sourceFile))
                 return false; // If smth go wrong
+            
+            // Sort Map using Binary Tree (tmp variable)
+            Map<String, Integer> tree = new TreeMap<String, Integer>(map);
+            map = tree;
 
             // Write data to second file
             if (!write(targetFile))
