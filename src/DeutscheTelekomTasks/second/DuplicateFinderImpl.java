@@ -11,7 +11,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
 
     private Map<String, Integer> map = new HashMap<>();
 
-    private boolean createInputFile(File file) {
+    private boolean createAbstractFile(File file) {
         try {
             if (!file.exists())
                 file.createNewFile();
@@ -68,7 +68,7 @@ public class DuplicateFinderImpl implements DuplicateFinder {
 
     @Override
     public boolean process(File sourceFile, File targetFile) {
-        if (createInputFile(sourceFile) && createInputFile(targetFile)) {
+        if (createAbstractFile(sourceFile) && createAbstractFile(targetFile)) {
             // Read data from first file
             if (!read(sourceFile))
                 return false; // If smth go wrong
