@@ -1,7 +1,7 @@
 package DeutscheTelekomTasks.second;
 
 import java.io.*;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Map;
 
 /*
@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class DuplicateFinderImpl implements DuplicateFinder {
 
-    private Map<String, Integer> map = new HashMap<>();
+    private static final Map<String, Integer> map = new TreeMap<>();
 
     private boolean createAbstractFile(File file) {
         try {
@@ -73,10 +73,6 @@ public class DuplicateFinderImpl implements DuplicateFinder {
             if (!read(sourceFile))
                 return false; // If smth go wrong
             
-            // Sort Map using Binary Tree (tmp variable)
-            Map<String, Integer> tree = new TreeMap<String, Integer>(map);
-            map = tree;
-
             // Write data to second file
             if (!write(targetFile))
                 return false;
